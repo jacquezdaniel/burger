@@ -2,8 +2,8 @@ var express = require('express');
 var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
+var PORT = process.env.PORT || 3000;
 var app = express();
-var PORT = process.env.PORT || 8080;
 var db = require('./models');
 
 // Parse application/x-www-form-urlencoded
